@@ -1,0 +1,592 @@
+// MDL v1 utf8
+mevislabVersion = 3.4.1
+network  {
+  watchlist = ""
+}
+module ImageSave {
+  internal  {
+    frame = "261 97 152 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "28 524 408 476"
+        sizeHint = "401 476"
+        wasOpen = no
+      }
+      window _scriptingconsole {
+        geometry = "106 530 600 500"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSaveNoContour
+    taskVerboseLogging = FALSE
+    filename = "E:\\NRS\\PA00268_PA00268_Automata_NoContour.dcm"
+    addFileExtension = TRUE
+    format = DICOM
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = "E:\\NRS_anon\\PA00268\\PA00268_Automata\\cmpr.dcm"
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = FrameSpecific
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 128
+    tiffTileY = 128
+    tiffTileXAuto = TRUE
+    tiffTileYAuto = TRUE
+    tiffLinearRGB = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
+module CSOFilter {
+  internal  {
+    frame = "481 337 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "564 533 496 495"
+        sizeHint = "496 495"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOFilterGroup1
+    updateMode = AutoClear
+    autoApply = FALSE
+    inputGroupString = 1
+    inputCSOString = ""
+    whichInputStringToUse = UseInputStringCSOGroup
+    groupFilterMode = FilterModeInclude
+    csoFilterMode = FilterModeInclude
+    separatorString = " "
+    groupInputEvaluationMode = EvaluationModeIds
+    csoInputEvaluationMode = EvaluationModeIds
+    shouldCompareCaseInsensitive = FALSE
+    autoAddAllSelectedCSO = FALSE
+    autoAddAllSelectedGroup = FALSE
+    autoAddAllShownCSO = FALSE
+    autoAddAllShownGroup = FALSE
+    autoAddAllVoxelizeCSO = FALSE
+    autoAddAllVoxelizeGroup = FALSE
+    autoAddAllEditableCSO = FALSE
+    autoAddAllEditableGroup = FALSE
+    actionSetPathPointColor = FALSE
+    actionSetPathPointAlpha = FALSE
+    actionSetPathPointBrighten = FALSE
+    actionSetPathPointStyle = FALSE
+    actionSetPathPointWidth = FALSE
+    actionSetVoxelWriteMode = FALSE
+    actionSetVoxelWriteValue = FALSE
+    actionSetShowState = FALSE
+    actionSetVoxelizeState = FALSE
+    actionSetEditableState = FALSE
+    actionSetTimePointIndex = FALSE
+    actionSetSelectedCSO = FALSE
+    actionSetSelectedGroup = FALSE
+    actionSetGroupSeedPointColor = FALSE
+    actionSetGroupSeedPointStyle = FALSE
+    actionSetGroupSeedPointSize = FALSE
+    actionSetGroupSeedPointAlpha = FALSE
+    targetPathPointColor = "1 1 1"
+    targetPathPointAlpha = 1
+    targetPathPointBrightenValue = 1
+    targetPathPointStyle = LineStyleSolid
+    targetPathPointWidth = 1
+    targetVoxelWriteMode = VoxelWriteModeModule
+    targetVoxelWriteValue = 1024
+    targetShowState = TRUE
+    targetVoxelizeState = TRUE
+    targetEditableState = TRUE
+    targetTimePointIndex = 0
+    targetSelectedCSO = TRUE
+    targetSelectedGroup = TRUE
+    targetGroupSeedPointColor = "1 1 1"
+    targetGroupSeedPointStyle = MarkerModeRect
+    targetGroupSeedPointSize = 2
+    targetGroupSeedPointAlpha = 1
+    listenToFinishingCSONotifications = TRUE
+    listenToFinishingGroupNotifications = TRUE
+    listenToSelectionCSOChangedNotifications = TRUE
+    listenToSelectionGroupChangedNotifications = TRUE
+    listenToMovedCSONotifications = FALSE
+    csoTabSelected = FALSE
+    groupTabSelected = TRUE
+  }
+}
+module CSOLoad {
+  internal  {
+    frame = "605 445 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1217 816 500 138"
+        sizeHint = "500 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOLoad
+    taskVerboseLogging = FALSE
+    fileName = "E:\\NRS_anon\\PA00268\\PA00268_Automata\\transversal_contours.cso"
+    autoApply = TRUE
+  }
+}
+module CSOFilter {
+  internal  {
+    frame = "697 337 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "862 342 496 495"
+        sizeHint = "496 495"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOFilterGroup2
+    updateMode = AutoClear
+    autoApply = FALSE
+    inputGroupString = 2
+    inputCSOString = 2
+    whichInputStringToUse = UseInputStringCSOGroup
+    groupFilterMode = FilterModeInclude
+    csoFilterMode = FilterModeInclude
+    separatorString = " "
+    groupInputEvaluationMode = EvaluationModeIds
+    csoInputEvaluationMode = EvaluationModeIds
+    shouldCompareCaseInsensitive = FALSE
+    autoAddAllSelectedCSO = FALSE
+    autoAddAllSelectedGroup = FALSE
+    autoAddAllShownCSO = FALSE
+    autoAddAllShownGroup = FALSE
+    autoAddAllVoxelizeCSO = FALSE
+    autoAddAllVoxelizeGroup = FALSE
+    autoAddAllEditableCSO = FALSE
+    autoAddAllEditableGroup = FALSE
+    actionSetPathPointColor = FALSE
+    actionSetPathPointAlpha = FALSE
+    actionSetPathPointBrighten = FALSE
+    actionSetPathPointStyle = FALSE
+    actionSetPathPointWidth = FALSE
+    actionSetVoxelWriteMode = FALSE
+    actionSetVoxelWriteValue = FALSE
+    actionSetShowState = FALSE
+    actionSetVoxelizeState = FALSE
+    actionSetEditableState = FALSE
+    actionSetTimePointIndex = FALSE
+    actionSetSelectedCSO = FALSE
+    actionSetSelectedGroup = FALSE
+    actionSetGroupSeedPointColor = FALSE
+    actionSetGroupSeedPointStyle = FALSE
+    actionSetGroupSeedPointSize = FALSE
+    actionSetGroupSeedPointAlpha = FALSE
+    targetPathPointColor = "1 1 1"
+    targetPathPointAlpha = 1
+    targetPathPointBrightenValue = 1
+    targetPathPointStyle = LineStyleSolid
+    targetPathPointWidth = 1
+    targetVoxelWriteMode = VoxelWriteModeModule
+    targetVoxelWriteValue = 1024
+    targetShowState = TRUE
+    targetVoxelizeState = TRUE
+    targetEditableState = TRUE
+    targetTimePointIndex = 0
+    targetSelectedCSO = TRUE
+    targetSelectedGroup = TRUE
+    targetGroupSeedPointColor = "1 1 1"
+    targetGroupSeedPointStyle = MarkerModeRect
+    targetGroupSeedPointSize = 2
+    targetGroupSeedPointAlpha = 1
+    listenToFinishingCSONotifications = TRUE
+    listenToFinishingGroupNotifications = TRUE
+    listenToSelectionCSOChangedNotifications = TRUE
+    listenToSelectionGroupChangedNotifications = TRUE
+    listenToMovedCSONotifications = FALSE
+    csoTabSelected = FALSE
+    groupTabSelected = TRUE
+  }
+}
+module CSOConvertToImage {
+  internal  {
+    frame = "445 237 184 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "740 326 440 488"
+        sizeHint = "440 488"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertToImage
+    updateMode = AutoClear
+    autoApply = TRUE
+    foregroundValue = 4095
+    backgroundValue = 0
+    useImageValues = FALSE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    boundingBoxMargin = 0
+    useAlwaysForegroundValueOfModule = FALSE
+    voxelizeCSO = TRUE
+    removeOutsideVoxels = FALSE
+    useAntiAliasing = FALSE
+    useGlobalSubsample = TRUE
+    antiAliasSubSample = 4
+    antiAliasSubSampleX = 4
+    antiAliasSubSampleY = 4
+    antiAliasSubSampleZ = 4
+    removeBorderVoxelsByVolume = TRUE
+    removeBorderVoxelVolumeThreshold = 0.6
+    ignoreTimePoints = FALSE
+    drawToAllTimePoints = FALSE
+    createMarkerList = FALSE
+    markerGenerationMode = CSOMarkerGenerationModeFromVoxels
+    outputTypeMode = Automatic
+    createCSOVoxelSet = FALSE
+    voxelSetMode = VoxelSetModeReplaceMax
+    generationMode = GenerationModeComplete
+    useFastModeForParallelCSOs = TRUE
+    numThreads = 1
+    timePointIndexForBoundingBox = -1
+    removeOutsideVoxelsMode = Volume
+  }
+}
+module CSOConvertToImage {
+  internal  {
+    frame = "661 229 184 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "740 326 440 488"
+        sizeHint = "440 488"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertToImage1
+    updateMode = AutoClear
+    autoApply = TRUE
+    foregroundValue = 4095
+    backgroundValue = 0
+    useImageValues = FALSE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    boundingBoxMargin = 0
+    useAlwaysForegroundValueOfModule = FALSE
+    voxelizeCSO = TRUE
+    removeOutsideVoxels = FALSE
+    useAntiAliasing = FALSE
+    useGlobalSubsample = TRUE
+    antiAliasSubSample = 4
+    antiAliasSubSampleX = 4
+    antiAliasSubSampleY = 4
+    antiAliasSubSampleZ = 4
+    removeBorderVoxelsByVolume = TRUE
+    removeBorderVoxelVolumeThreshold = 0.6
+    ignoreTimePoints = FALSE
+    drawToAllTimePoints = FALSE
+    createMarkerList = FALSE
+    markerGenerationMode = CSOMarkerGenerationModeFromVoxels
+    outputTypeMode = Automatic
+    createCSOVoxelSet = FALSE
+    voxelSetMode = VoxelSetModeReplaceMax
+    generationMode = GenerationModeComplete
+    useFastModeForParallelCSOs = TRUE
+    numThreads = 1
+    timePointIndexForBoundingBox = -1
+    removeOutsideVoxelsMode = Volume
+  }
+}
+module ImageSave {
+  internal  {
+    frame = "445 97 136 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "464 521 408 476"
+        sizeHint = "401 476"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSaveGroup1
+    taskVerboseLogging = FALSE
+    filename = "E:\\NRS\\PA00268_PA00268_Automata_Contour1.dcm"
+    addFileExtension = TRUE
+    format = DICOM
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = "E:\\NRS_anon\\PA00268\\PA00268_Automata\\cmpr.dcm"
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = FrameSpecific
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 128
+    tiffTileY = 128
+    tiffTileXAuto = TRUE
+    tiffTileYAuto = TRUE
+    tiffLinearRGB = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
+module ImageSave {
+  internal  {
+    frame = "661 97 136 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "607 489 408 476"
+        sizeHint = "401 476"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSaveGroup2
+    taskVerboseLogging = FALSE
+    filename = "E:\\NRS\\PA00268_PA00268_Automata_Contour2.dcm"
+    addFileExtension = TRUE
+    format = DICOM
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = "E:\\NRS_anon\\PA00268\\PA00268_Automata\\cmpr.dcm"
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = FrameSpecific
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 128
+    tiffTileY = 128
+    tiffTileXAuto = TRUE
+    tiffTileYAuto = TRUE
+    tiffLinearRGB = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
+module RunPythonScript {
+  internal  {
+    frame = "793 445 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1318 138 958 768"
+        sizeHint = "621 300"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RunPythonScript
+    in0 = ""
+    in1 = ""
+    in2 = ""
+    in3 = ""
+    in4 = ""
+    in5 = ""
+    in6 = ""
+    in7 = ""
+    in8 = ""
+    in9 = ""
+    inComment0 = in0
+    inComment1 = in1
+    inComment2 = in2
+    inComment3 = in3
+    inComment4 = in4
+    inComment5 = in5
+    inComment6 = in6
+    inComment7 = in7
+    inComment8 = in8
+    inComment9 = in9
+    autoApply0 = TRUE
+    autoApply1 = TRUE
+    autoApply2 = TRUE
+    autoApply3 = TRUE
+    autoApply4 = TRUE
+    autoApply5 = TRUE
+    autoApply6 = TRUE
+    autoApply7 = TRUE
+    autoApply8 = TRUE
+    autoApply9 = TRUE
+    out0 = ""
+    out1 = ""
+    out2 = ""
+    out3 = ""
+    out4 = ""
+    out5 = ""
+    out6 = ""
+    out7 = ""
+    out8 = ""
+    out9 = ""
+    outComment0 = out0
+    outComment1 = out1
+    outComment2 = out2
+    outComment3 = out3
+    outComment4 = out4
+    outComment5 = out5
+    outComment6 = out6
+    outComment7 = out7
+    outComment8 = out8
+    outComment9 = out9
+    initCode = "# For backward compatibility, set up CTX as alias for ctx
+CTX = ctx # ctx is the network's context, not RunPythonScript's"
+    wakeUpCode = ""
+    code = "*import os
+
+base = "E:\\\\NRS_anon\\\\"
+vessel='vessels'
+outbase = "E:\\\\NRS\\\\"
+
+def apply_filters(patient,study):
+  ctx.module("ImageLoad").field("filename").value = base+patient+"\\\\"+study + "\\\\"+ "cmpr.dcm"
+  ctx.module("CSOLoad").field("fileName").value =  base+patient+"\\\\"+study+"\\\\"+ "transversal_contours.cso"
+  ctx.module("ImageSaveNoContour").field("filename").value = outbase + patient+"_"+study + "_NoContour.dcm"
+  ctx.module("ImageSaveGroup1").field("filename").value = outbase  + patient+"_"+study + "_Contour1.dcm"
+  ctx.module("ImageSaveGroup2").field("filename").value = outbase  + patient+"_"+study + "_Contour2.dcm"
+  ctx.module("CSOFilterGroup1").field("apply").touch()
+  ctx.module("CSOFilterGroup2").field("apply").touch()
+  ctx.module("CSOConvertToImage").field("apply").touch()
+  ctx.module("CSOConvertToImage1").field("apply").touch()
+  ctx.module("ImageSaveNoContour").field("save").touch()
+  ctx.module("ImageSaveGroup1").field("save").touch()
+  ctx.module("ImageSaveGroup2").field("save").touch()
+
+for patient in os.listdir(base):
+
+  if not('.' in patient):
+    for study in os.listdir(base + patient + "\\\\"):
+      apply_filters(patient,study)
+      
+
+
+
+*"
+    finalizeCode = ""
+    showFields = FALSE
+    showInitCode = FALSE
+    showWakeUpCode = FALSE
+    showCode = TRUE
+    showFinalizeCode = FALSE
+    showConsole = FALSE
+  }
+}
+module ImageLoad {
+  internal  {
+    frame = "257 341 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "195 563 474 353"
+        sizeHint = "474 353"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad
+    filename = "E:\\NRS_anon\\PA00268\\PA00268_Automata\\cmpr.dcm"
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module OutputInspector {
+  internal  {
+    frame = "893 269 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "956 566 120 72"
+        sizeHint = "8 8"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OutputInspector
+    objectType = ""
+  }
+}
+connections  {
+  ImageSaveNoContour.input0 = ImageLoad.output0
+  CSOFilterGroup1.inputCSOList = CSOLoad.outCSOList
+  CSOFilterGroup2.inputCSOList = CSOLoad.outCSOList
+  CSOConvertToImage.input0 = ImageLoad.output0
+  CSOConvertToImage.inCSOList = CSOFilterGroup1.outputCSOList
+  CSOConvertToImage1.input0 = ImageLoad.output0
+  CSOConvertToImage1.inCSOList = CSOFilterGroup2.outputCSOList
+  ImageSaveGroup1.input0 = CSOConvertToImage.output0
+  ImageSaveGroup2.input0 = CSOConvertToImage1.output0
+}
+networkModel = ""
