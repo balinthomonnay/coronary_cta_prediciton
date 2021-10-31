@@ -19,3 +19,14 @@ This model was trained, validated (tuned) and tested using Python 3.7.6, on Ubun
 ## Evaulation Process
 Use the CSOtoDCM.mlab to create dicom files from the contours, than create a conda enviroment from the envrioment.yml file, and run prediciton.ipyn
 
+## Prepariations to use the docker file
+run teh following commands to istall dockers and enable the video_card to communicate with the docker:
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt install nvidia-cuda-toolkit
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+   && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
+   && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+sudo systemctl restart docker
