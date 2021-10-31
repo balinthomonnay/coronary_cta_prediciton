@@ -21,6 +21,7 @@ Use the CSOtoDCM.mlab to create dicom files from the contours, than create a con
 
 ## Prepariations to use the docker file
 run the following commands to istall dockers and enable the video_card to communicate with the docker:
+```
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo apt install nvidia-cuda-toolkit
@@ -30,3 +31,4 @@ distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
 sudo apt-get update
 sudo apt-get install -y nvidia-docker2
 sudo systemctl restart docker
+```
