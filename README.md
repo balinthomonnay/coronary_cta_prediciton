@@ -20,7 +20,7 @@ This model was trained, validated (tuned) and tested using Python 3.7.6, on Ubun
 Use the CSOtoDCM.mlab to create dicom files from the contours, than create a conda enviroment from the envrioment.yml file, and run prediciton.ipyn
 
 ## Prepariations to use the docker file
-run the following commands to install dockers and enable the video_card to communicate with the docker:
+Run the following commands to install dockers and enable the video_card to communicate with the docker:
 ```
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
@@ -32,3 +32,9 @@ sudo apt-get update
 sudo apt-get install -y nvidia-docker2
 sudo systemctl restart docker
 ```
+## Using the dockerfile
+In the folder containing everything downloaded from here run 
+```
+docker-compose up
+```
+Than, in a browser at localhost:8000, the jupyter notebooks will be visable and usable. The docker will only have access to files and folders in the same folder as where the docker-compose.yml file is.
