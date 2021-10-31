@@ -1,4 +1,4 @@
-name: luna_eda
+name: cta_pred_env
 channels:
   - simpleitk
   - conda-forge
