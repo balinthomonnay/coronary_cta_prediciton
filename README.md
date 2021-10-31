@@ -17,7 +17,7 @@ This model was trained, validated (tuned) and tested using Python 3.7.6, on Ubun
 | *prediction.ipynb* | notebook on the model evaulation |Model weights to load, output DCM files from CSOtoDCM.mlab|
 
 ## Evaulation Process
-Use the CSOtoDCM.mlab to create dicom files from the contours, than create a conda enviroment from the envrioment.yml file, and run prediciton.ipyn
+Use the CSOtoDCM.mlab to create dicom files from the contours, than create a conda enviroment from the envrioment.yml file, or use the docker file provided and run prediciton.ipyn
 
 ## Prepariations to use the docker file
 Run the following commands to install dockers engine:
