@@ -14,7 +14,13 @@ This model was trained, validated (tuned) and tested using Python 3.7.6, on Ubun
 | *enviroment.yml* | Python enviroment ||
 | *model_external_dataset.h5* | Model weights transfer learned on the exteranl dataset, which contained large plaques. ||
 | *model_internal_dataset.h5* | Model weights learned on the initail dataset ||
+| *Dockerfile* | A dockerfile containing all required libraries for the notebooks ||
+| *docker-compose.yml* | A docker compose file containg startup information for the Dockerfile ||
 | *prediction.ipynb* | notebook on the model evaulation |Model weights to load, output DCM files from CSOtoDCM.mlab|
+| *transfer_learning.ipynb* | notebook on creating a transfer learning for a ne dataset |Model weights to load, output DCM files from CSOtoDCM.mlab|
+| *script_libr.py* | Contains functions used in the notebooks ||
+
+
 
 ## Evaulation Process
 Use the CSOtoDCM.mlab to create dicom files from the contours, than create a conda enviroment from the envrioment.yml file, or use the docker file provided and run prediciton.ipyn
@@ -38,6 +44,6 @@ sudo systemctl restart docker
 ## Using the dockerfile
 In the folder containing everything downloaded from here run 
 ```
-docker-compose up
+sudo docker-compose up
 ```
 Than, in a browser at localhost:8000, the jupyter notebooks will be visable and usable. The docker will only have access to files and folders in the same folder as where the docker-compose.yml file is.
