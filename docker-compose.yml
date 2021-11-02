@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  coronary_cta_prediction_service:
+    container_name: cta_prediction_service
+    build: '.'
+    runtime: nvidia
+    command: 'jupyter notebook --no-browser --allow-root --ip 0.0.0.0 --port 8000 --NotebookApp.token="" --NotebookApp.password=""'      
+    volumes:
+      - ./:/dmc
+    ports:
+      - 8000:8000
