@@ -13,8 +13,8 @@ This model was trained, validated (tuned) and tested using Python 3.7.6, on Ubun
 | *CSOtoDCM.mlab* | MevisLab file, to create dicom images from the Contour files exported form Mevis |CSO and DCM files form Medis |
 | *enviroment.yml* | Python enviroment ||
 | *model_external_dataset.h5* | Model weights transfer learned on the exteranl dataset, which contained large plaques. ||
-| *model_internal_dataset.h5* | Model weights learned on the initail dataset ||
-| *Dockerfile* | A dockerfile containing all required libraries for the notebooks ||
+| *model_internal_dataset.h5* | Model weights learned on the initial dataset ||
+| *Dockerfile* | A dockerfile containing all required libraries for the notebooks, the base image is from https://hub.docker.com/r/datamachines/cudnn_tensorflow_opencv ||
 | *docker-compose.yml* | A docker compose file containg startup information for the Dockerfile ||
 | *prediction.ipynb* | notebook on the model evaulation |Model weights to load, output DCM files from CSOtoDCM.mlab|
 | *transfer_learning.ipynb* | notebook on creating a transfer learning for a ne dataset |Model weights to load, output DCM files from CSOtoDCM.mlab|
