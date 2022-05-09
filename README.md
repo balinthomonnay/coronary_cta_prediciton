@@ -1,7 +1,7 @@
 # Deep learning–based atherosclerotic coronary plaque segmentation on coronary CT angiography
 Natasa Jávorszky; Bálint Homonnay; Gary Gerstenblith, MD; David Bluemke, MD; Péter Kiss; Mihály Török; David Celentano, ScD; Hong Lai, PhD; Shenghan Lai, MPH; Márton Kolossváry, MD, PhD
 
-Published in: European Radiology (2022), doi: [10.1007/s00330-022-08801-8](<https://www.springer.com/journal/330>)
+Published in: European Radiology (2022), doi: [10.1007/s00330-022-08801-8](<https://link.springer.com/article/10.1007/s00330-022-08801-8>)
 
 ![Figure 3](/Figure_3.png)
 
